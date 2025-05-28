@@ -6,6 +6,26 @@ This assignment combines two modules, both graphs and shortest path. It is recom
 
 Also, the questions in the README.md involve some research to help prepare you to think about content in 5800. Give yourself some time. 
 
+- [Finding The Shortest Distance](#finding-the-shortest-distance)
+  - [Learning Objectives](#learning-objectives)
+  - [Shortest Path](#shortest-path)
+  - [Guidelines](#guidelines)
+    - [Safe Assumptions](#safe-assumptions)
+  - [Sample Run](#sample-run)
+  - [Provided Files](#provided-files)
+    - [Report.md](#reportmd)
+  - [📝 Grading Rubric](#-grading-rubric)
+    - [Submission Reminder 🚨](#submission-reminder-)
+  - [📚 Resources](#-resources)
+
+## Learning Objectives
+
+The learning objects for this assignment are
+* Practice Graph representation and graph algorithms
+* Build a C application "from scratch"
+* Look at a practical application for Dijkstra's shortest path.
+
+
 ## Shortest Path
 
 Think about google maps and routes to various locations. Of course, the database of cities is *much* larger than what you will be dealing with, making the problem more complex.
@@ -43,6 +63,11 @@ The above map represents the cities in [city_distances.dat](../city_distances.da
 * You may assume the input both files and command line are lowercase, nor are there extra spaces. However, they are good things to look up how to do in C, and it often makes interfaces much nicer to be able to type in `Boston` instead of `boston`.
 * If the distances file has a line that doesn't match the format, `city city distance`, go ahead and skip it. (more than likely there will be an empty line at the end)
 * If a city / vertex is entered that doesn't exist, print invalid command and print the help message.
+
+> [!TIP]
+> No C Files? That is correct. We are giving you freedom to write them all from
+> scratch. We will just call make, and assume the file you produce is `map.out` (IMPORTANT). This is your opportunity to compile everything you have learned
+> into one application that will use multiple data structures. 
 
 ## Sample Run
 Here is a sample run. Technically, you can do what you want for your initial 'splash' as we will just be looking at the generated output after a command is entered. You can also put your own 'farewell' message at the end. Please double check that your output matches the sample output below. **The spaces in front of path found are the `\t` character, which is a tab.**
@@ -109,11 +134,22 @@ We have provided a number of test files. You will recognize the cities from the 
 
 You may want to generate your own graphs! 
 
+
+### Report.md 
+You will notice there are questions in your [readme.md](../README.md) and [Report.md](../Report.md) file. You will want to answer these questions. 
+
+Every assignment will have to fill out both a README.md and Report.md, so make sure you review them!
+
+> [!IMPORTANT]
+> A common mistake in markdown files is not viewing how they render on the website. Always go to github and review
+> how the markdown files really look. Graders go to github to review the code even though you submit on gradescope,
+> as it will properly render latex math (which is required for a lot of reports). 
+> 
+
 ## 📝 Grading Rubric
 
 We will be grading your program by input/output tests, and manually reviewing your code. As such, as long as your make file generates the proper `map.out` we will be fine no matter the files you use. Your design matters for this assignment, so make sure you design before you write!  
 
-This is a two week assignment! 
 
 1. Learning (AG)
    * Program runs with a basic list of vertices and distances.
@@ -137,7 +173,7 @@ This is a two week assignment!
      * Uses Dykstra's algorithm to find the shortest path. 
      * Test Files are included/obvious code was tested before submission.
 4. Exceeds  (MG)
-   * Questions asked in README.md are answered.
+   * Questions asked in Report.md and README.md are answered.
    * Note: questions involve research! Give yourself some time. 
 
 
